@@ -1,0 +1,12 @@
+{
+  "name": "bowling-kata-20180108",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn run jest"
+  },
+  "dependencies": {
+    "jest": "^22.0.4"
+  }
+}
