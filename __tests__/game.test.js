@@ -2,7 +2,7 @@ const Game = require('../src/game')
 
 
 const testCases = [
-    { rolls: [], expectedScore: 0 }
+    { rolls: [], expectedScore: 0, desciption: "Empty game" }
     , { rolls: [1], expectedScore: 1 }
     , { rolls: [1, 1], expectedScore: 2 }
     , { rolls: [5, 5, 1], expectedScore: 12 }
@@ -33,11 +33,11 @@ testCases.forEach(testCase => {
 //     expect(game.score()).toBe(20);
 // })
 
-// test("Perfect game", () => {
-//     const game = new Game();
-//     const allOnes = Array.apply(null, { length: 12 })
-//         .map(() => 10);
-//     rollMany(game, allOnes);
+test("Perfect game", () => {
+    const game = new Game();
+    const allOnes = Array.apply(null, { length: 12 })
+        .map(() => 10);
+    rollMany(game, allOnes);
 
-//     expect(game.score()).toBe(300);
-// })
+    expect(game.score()).toBe(300);
+})
